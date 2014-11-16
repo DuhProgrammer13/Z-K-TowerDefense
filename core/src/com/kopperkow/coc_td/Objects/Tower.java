@@ -49,13 +49,17 @@ public class Tower {
 	public int getDamageType() {
 		return damageType;
 	}
+
+	public void setDamageType(int damageType) {
+		this.damageType = damageType;
+	}
 	
 	public int getBuffType() {
 		return buffType;
 	}
-
-	public void setDamageType(int damageType) {
-		this.damageType = damageType;
+	
+	public int setBuffType(int buffType) {
+		this.buffType = buffType;
 	}
 
 	public float getAttackSpeed() {

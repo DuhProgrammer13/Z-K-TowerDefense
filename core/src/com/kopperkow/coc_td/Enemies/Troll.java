@@ -4,13 +4,16 @@ import com.kopperkow.coc_td.Objects.Enemy;
 
 public class Troll extends Enemy {
 	
+	private static final float MOVEMENT_SPEED = 12;
+	private static final float DAMAGE_RESISTANCE = 17;
+	
 	/**
 	 * Instantiate a new Enemy Object Troll
 	 * @param x
 	 * @param y
 	 */
 	public Troll(float x, float y){
-		
+		super(MOVEMENT_SPEED, DAMAGE_RESISTANCE); //Was this even close? 
 	}
 	
 	/**
@@ -18,7 +21,7 @@ public class Troll extends Enemy {
 	 * @param delta Move the troll at a constant pace with FPS
 	 */
 	@Override
-	public void update(float delta){
+	public void update(float delta,){
 		
 	}
 }
