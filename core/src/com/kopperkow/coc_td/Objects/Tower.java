@@ -5,19 +5,24 @@ public class Tower {
 	private float range; //MAX is 20
 	private float damage; // MAX is 50
 	private int damageType; // AREA or SINGLE
+	private int buffType; //Damage, Range, or Speed
 	private float attackSpeed; // MAX is 1 (1 is lowest 20 is highest, 1 = fast)
 
 	public static int AREA = 0;
 	public static int SINGLE = 1;
+	public static int DAMAGEBUFF = 2;
+	public static int RANGEBUFF = 3;
+	public static int SPEEDBUFF = 4;
 	
 	public Tower(){
 		
 	}
 
-	public Tower(float range, float beginningDamage, int damageType, float attackSpeed) {
+	public Tower(float range, float beginningDamage, int damageType, int buffType, float attackSpeed) {
 		this.range = range;
 		this.damage = beginningDamage;
 		this.damageType = damageType;
+		this.buffType = buffType;
 		this.attackSpeed = attackSpeed;
 	}
 	
@@ -43,6 +48,10 @@ public class Tower {
 
 	public int getDamageType() {
 		return damageType;
+	}
+	
+	public int getBuffType() {
+		return buffType;
 	}
 
 	public void setDamageType(int damageType) {
