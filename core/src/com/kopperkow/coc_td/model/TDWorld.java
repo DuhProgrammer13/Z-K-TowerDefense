@@ -24,5 +24,8 @@ public class TDWorld {
 		}
 	}
 	
+	private void save(){
+		gs.save();
+	}
 	
 }

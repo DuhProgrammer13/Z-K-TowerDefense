@@ -13,7 +13,7 @@ public class Troll extends Enemy {
 	 * @param y
 	 */
 	public Troll(float x, float y){
-		super(MOVEMENT_SPEED, DAMAGE_RESISTANCE); //Was this even close? 
+		super(MOVEMENT_SPEED, DAMAGE_RESISTANCE);
 	}
 	
 	/**
@@ -21,7 +21,7 @@ public class Troll extends Enemy {
 	 * @param delta Move the troll at a constant pace with FPS
 	 */
 	@Override
-	public void update(float delta,){
+	public void update(float delta){
 		
 	}
 }

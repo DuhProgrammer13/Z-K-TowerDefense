@@ -18,7 +18,7 @@ public class Tower {
 		
 	}
 
-	public Tower(float range, float beginningDamage, int damageType, int buffType, float attackSpeed) {
+	public Tower(float range, float beginningDamage, int damageType, float attackSpeed) { //TODO missing possible int buffType
 		this.range = range;
 		this.damage = beginningDamage;
 		this.damageType = damageType;
@@ -58,7 +58,7 @@ public class Tower {
 		return buffType;
 	}
 	
-	public int setBuffType(int buffType) {
+	public void setBuffType(int buffType) {
 		this.buffType = buffType;
 	}
 
